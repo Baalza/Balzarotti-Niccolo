@@ -80,7 +80,7 @@ section {
     display: inline-block;
     background-position: center, center;
     width: 500px !important;
-    height: 76vh;
+    height: 77vh !important;
     background-repeat: no-repeat;
   }
 }
