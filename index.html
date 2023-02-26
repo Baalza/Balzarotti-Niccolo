@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/m_logo.png" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/f85002145c.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Balzarotti Niccolò</title>
+  </head>
+  <body>
+    <header>
+      <section id="nav">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+              <img
+                class="d-inline-block align-text-top pt-1"
+                src="/assets/images/m_logo.png"
+                alt=""
+                width="40"
+                height="50"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fa-solid fa-bars"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul id="navLink" class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link matter home active"
+                    aria-current="page"
+                    href="#home"
+                    ><p class="sign">00.</p>
+                    Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link aboutme matter" href="#aboutme">
+                    <p class="sign">01.</p>
+                    About Me</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link project matter" href="#project">
+                    <p class="sign">02.</p>
+                    Project</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contact matter" href="#contact"
+                    ><p class="sign">03.</p>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section
+      id="home"
+      class="bg-section bg-parallax text-center bg-overlay bg-overlay-dark"
+    >
+      <div class="container-fluid">
+        <div class="container">
+          <div
+            class="row justify-content-center align-items-center pt-5 full-vh"
+          >
+            <div
+              class="col-md-auto col-auto col-lg-auto bg-overlay bg-overlay-darkin profile pt-4"
+            >
+              <div class="over">
+                <h3
+                  class="sign animate__animated animate__flipInX animate__delay-1s"
+                >
+                  Hi, my name is:
+                </h3>
+                <h1
+                  id="trigger"
+                  class="yellow animate__animated animate__flipInX animate__delay-1s"
+                >
+                  {TAP HERE}
+                </h1>
+                <h1 id="name" class="white hidden">Balzarotti Niccolò</h1>
+                <h3
+                  class="matter animate__animated animate__flipInX animate__delay-1s pt-1"
+                >
+                  I am a university student.
+                </h3>
+                <p
+                  class="matter pt-3 animate__animated animate__flipInX animate__delay-1s"
+                >
+                  I'm trying to become a good full stack developer, during my
+                  studies I love experimenting with new technologies and getting
+                  informed about all the news from the web world.
+                </p>
+                <div
+                  class="typewriter pt-1 animate__animated animate__flipInX animate__delay-1s"
+                >
+                  <p class="sign">Email:</p>
+                  <p class="yellow anim-typewriter">
+                    niccolobalzarotti@gmail.com
+                  </p>
+                </div>
+                <div
+                  class="row pt-3 animate__animated animate__flipInX animate__delay-1s"
+                >
+                  <div class="col">
+                    <a
+                      href="https://github.com/Baalza?tab=repositories"
+                      target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/niccol%C3%B2-balzarotti-a8a94b201/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin pe-4"></i
+                    ></a>
+                    <a href="https://twitter.com/baalza777" target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </div>
+                </div>
+                <a href="#aboutme"
+                  ><button
+                    type="button"
+                    class="btn btn-primary mt-5 exp animate__animated animate__flipInX animate__delay-1s"
+                  >
+                    Get to know me!
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aboutme" class="aboutme fade-in-section is-visible">
+      <div class="container-fluid navy">
+        <div id="test" class="container">
+          <div class="row justify-content-center align-items-start fit-vh">
+            <div class="col-md-8 col-auto col-lg-8 text-center">
+              <span class="space"></span>
+
+              <h1 class="sign pt-4 mt-5">01.</h1>
+              <h1 class="white pt-2">About Me</h1>
+
+              <button
+                id="loading"
+                type="button"
+                class="btn btn-primary mt-5 exp"
+                onclick="loader();displayer(); this.onclick=null;"
+              >
+                Something went wrong, please reload !
+              </button>
+              <div class="hidden" id="line-container"></div>
+              <div id="abt-me" class="container descr pt-4 hidden">
+                <p class="matterl pt-3">Hey dude! My name is&hairsp;</p>
+                <p class="sign">Niccolò&hairsp;</p>
+                <p class="matterl pt-3">
+                  and now I will reveal to you who I am.
+                </p>
+              </div>
+              <div id="abt-me2" class="container descr pt-3 hidden">
+                <p class="matterl pt-2">I want to become a&hairsp;</p>
+                <p class="yellow">full stack developer</p>
+                <p class="matterl">,&hairsp;</p>
+                <p class="matterl">
+                  I love imagining and building everything that can fit on the
+                  internet My passion was born in the first year of high school,
+                </p>
+                <p class="sign">
+                  it was love at first sight with my first "Hello World".
+                </p>
+              </div>
+              <div id="abt-me3" class="container descr pt-3 hidden">
+                <p class="matterl pt-2">Now I'm a&hairsp;</p>
+                <p class="sign pt-2">university student&hairsp;</p>
+                <p class="matterl pt-2">
+                  who likes to experiment and discover the new technologies of
+                  this amazing world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="space"></span>
+          <div
+            id="abt-me4"
+            class="row justify-content-center align-items-center pt-5 hidden"
+          >
+            <div class="col text-center">
+              <h5 class="white">My skill and recent technologies:</h5>
+            </div>
+          </div>
+          <div
+            id="abt-me5"
+            class="row justify-content-start align-items-center pt-5 hidden"
+          >
+            <div
+              class="col-6 text-center align-items-end border-end border-dark"
+            >
+              <p class="yellow">
+                <i class="fa-solid fa-caret-right me-2"></i>HTML<i
+                  class="fa-brands fa-html5 ms-2"
+                ></i>
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>CSS<i
+                  class="fa-brands fa-css3-alt ms-2"
+                ></i>
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>Javascript<i
+                  class="fa-brands fa-square-js ms-2"
+                ></i>
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>Bootstrap<i
+                  class="fa-brands fa-bootstrap ms-2"
+                ></i>
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>Tailwind CSS
+              </p>
+            </div>
+            <div class="col-6 text-center align-items-end">
+              <p class="yellow">
+                <i class="fa-solid fa-caret-right me-2"></i>JAVA<i
+                  class="fa-brands fa-java ms-2"
+                ></i>
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>Spring Boot
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>Thymeleaf
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>C++
+              </p>
+              <p class="yellow pt-2">
+                <i class="fa-solid fa-caret-right me-2"></i>SQL
+              </p>
+            </div>
+          </div>
+        </div>
+        <span class="space pt-5 mt-5"></span>
+      </div>
+    </section>
+    <section id="project" class="project">
+      <div class="container-fluid navy text-center">
+        <div id="test" class="container">
+          <div class="row justify-content-center align-items-center fit-vh">
+            <div
+              class="col-md-8 col-auto col-lg-8 text-center border-top border-dark"
+            >
+              <span class="space"></span>
+
+              <h1 class="sign pt-4 mt-5">02.</h1>
+              <h1 class="white pt-2">Project</h1>
+              <p class="matter pt-3">
+                These are some of my personal and university projects
+              </p>
+            </div>
+          </div>
+          <span class="space"></span>
+          <div class="row justify-content-center align-items-center mt-3">
+            <div class="col-auto text-center align-items-center pt-3">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-title text-start">
+                    <a
+                      href="https://github.com/Baalza/KaisenApp"
+                      target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                  </p>
+
+                  <a
+                    href="https://github.com/Baalza/KaisenApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                    class="h"
+                  >
+                    <h5 class="card-title white">Kaisen APP</h5></a
+                  >
+                  <p class="card-text matterl">
+                    Mobile application for managing movies and TV series
+                  </p>
+
+                  <p class="whited pe-3">Java</p>
+                  <p class="whited pe-3">Firebase</p>
+                  <p class="whited pe-3">Room</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto text-center align-items-center pt-3">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-title text-start">
+                    <a
+                      href="https://github.com/Baalza/KanbanBoard"
+                      target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                  </p>
+
+                  <a
+                    href="https://github.com/Baalza/KanbanBoard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                  >
+                    <h5 class="card-title white">KanbanBoard</h5></a
+                  >
+                  <p class="card-text matterl">
+                    Kanban-style web app similar to Trello
+                  </p>
+                  <p class="whited pe-3">Java</p>
+                  <p class="whited pe-3">Spring Boot</p>
+                  <p class="whited">Heroku</p>
+                  <p class="whited pe-3">JS</p>
+                  <p class="whited">Bootstrap</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto text-center align-items-center pt-3">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-title text-start">
+                    <a
+                      href="https://github.com/Baalza/BBR-ManagementWork"
+                      target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                  </p>
+
+                  <a
+                    href="https://github.com/Baalza/BBR-ManagementWork"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                  >
+                    <h5 class="card-title white">BBR-ManagementWork</h5></a
+                  >
+                  <p class="card-text matterl">
+                    Web App - business management for workflow Still in
+                    developing
+                  </p>
+                  <p class="whited pe-3">Java</p>
+                  <p class="whited pe-3">Spring Boot</p>
+                  <p class="whited pe-3">Thymeleaf</p>
+                  <p class="whited pe-3">Heroku</p>
+                  <p class="whited pe-3">JS</p>
+                  <p class="whited">Bootstrap</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-auto text-center align-items-center pt-3">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-title text-start">
+                    <a
+                      href="https://github.com/Baalza/TxtAnalizer"
+                      target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                  </p>
+
+                  <a
+                    href="https://github.com/Baalza/TxtAnalizer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                  >
+                    <h5 class="card-title white">TxtAnalizer</h5></a
+                  >
+                  <p class="card-text matterl">
+                    A simple text analyzer to check the formatting of a text
+                  </p>
+                  <p class="whited pe-3">QT</p>
+                  <p class="whited pe-3">C++</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="lessp"
+              class="col-auto text-center align-items-center pt-3"
+            >
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-title text-start">
+                    <a
+                      href="https://github.com/Baalza/Artist-information"
+                      target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                  </p>
+
+                  <a
+                    href="https://github.com/Baalza/Artist-information"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                  >
+                    <h5 class="card-title white">Artist-information</h5></a
+                  >
+                  <p class="card-text matterl">
+                    Tool that displays artists from Universal and Emi labels
+                  </p>
+                  <p class="whited pe-3">QT</p>
+                  <p class="whited pe-3">C++</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto text-center align-items-center pt-3">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-title text-start">
+                    <a href="https://github.com/Baalza/Stack" target="_blank"
+                      ><i class="fa-brands fa-github pe-4"></i
+                    ></a>
+                  </p>
+
+                  <a
+                    href="https://github.com/Baalza/Stack"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                  >
+                    <h5 class="card-title white">Stack</h5></a
+                  >
+                  <p class="card-text matterl">
+                    Design and implementation of a class that implements a Stack
+                    of generic elements T
+                  </p>
+                  <p class="whited pe-3">C++</p>
+                  <p class="whited pe-3">Doxygen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="hider" class="hider-m">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-auto text-center align-items-center pt-3">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body">
+                    <p class="card-title text-start">
+                      <a href="https://github.com/Baalza/Set" target="_blank"
+                        ><i class="fa-brands fa-github pe-4"></i
+                      ></a>
+                    </p>
+
+                    <a
+                      href="https://github.com/Baalza/Set"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="text-decoration: none"
+                    >
+                      <h5 class="card-title white">Set</h5></a
+                    >
+                    <p class="card-text matterl">
+                      Design and implementation of a class that implements a set
+                      of generic elements T
+                    </p>
+                    <p class="whited pe-3">C++</p>
+                    <p class="whited pe-3">Doxygen</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto text-center align-items-center pt-3">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body">
+                    <p class="card-title text-start">
+                      <a
+                        href="https://github.com/Baalza/Parser-JSON"
+                        target="_blank"
+                        ><i class="fa-brands fa-github pe-4"></i
+                      ></a>
+                    </p>
+
+                    <a
+                      href="https://github.com/Baalza/Parser-JSON"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="text-decoration: none"
+                    >
+                      <h5 class="card-title white">Parser JSON</h5></a
+                    >
+                    <p class="card-text matterl">
+                      Given an input json string, a JSON Object will be returned
+                    </p>
+                    <p class="whited pe-3">Lisp</p>
+                    <p class="whited pe-3">Prolog</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto text-center align-items-center pt-3">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body">
+                    <p class="card-title text-start">
+                      <a href="https://github.com/Baalza/MST" target="_blank"
+                        ><i class="fa-brands fa-github pe-4"></i
+                      ></a>
+                    </p>
+
+                    <a
+                      href="https://github.com/Baalza/MST"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="text-decoration: none"
+                    >
+                      <h5 class="card-title white">MST</h5></a
+                    >
+                    <p class="card-text matterl">
+                      Project with graphs Minimum spanning tree - prim's
+                      algorithm
+                    </p>
+                    <p class="whited pe-3">Lisp</p>
+                    <p class="whited pe-3">Prolog</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            id="hidem"
+            type="button"
+            class="btn btn-primary mt-5 exp hide-m"
+            onclick="show(); "
+          >
+            SHOW MORE
+          </button>
+          <a href="#lessp"
+            ><button
+              id="showm"
+              type="button"
+              class="btn btn-primary mt-5 exp hide-m hidden"
+              onclick="hide(); "
+            >
+              SHOW LESS
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container-fluid navy text-center">
+        <div id="test" class="container">
+          <div class="row justify-content-center align-items-center fit-vh">
+            <div class="col-md-8 col-auto col-lg-8 text-center">
+              <span class="space"></span>
+
+              <h1 class="sign pt-4 mt-5">03.</h1>
+              <h1 class="white pt-2">Contact</h1>
+              <p class="matter pt-3">
+                I am looking for any opportunity, just send me an email and I
+                will reply as soon as possible.
+              </p>
+              <a
+                href="mailto:niccolobalzarotti@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><button type="button" class="btn btn-primary mt-5 mail">
+                  SAY HI
+                </button></a
+              >
+            </div>
+            <span class="space pt-5 mt-5"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid b">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col text-center align-items-center">
+              <p class="matter mt-3">Designed & Developed by</p>
+              <p class="sign mb-4">Balzaroti Niccolò</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f85002145c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
